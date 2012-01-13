@@ -18,8 +18,8 @@
   </g:javascript>
 
     
-    <h1>Series/Accession List</h1>
-    <h2>${identifier}: ${title}</h2>
+    <h2>Series/Accession List</h2>
+    <h3>${identifier}: ${title}</h3>
     <br />
     <table id="myTable" class="tablesorter">
       <thead>

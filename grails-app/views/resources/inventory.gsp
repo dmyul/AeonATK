@@ -19,8 +19,8 @@
     } 
     ); 
   </g:javascript>
-    <h1>Inventory Listing</h1>
-    <h2>${res.resourceId1} ${res.resourceId2}: ${res.title}</h2>
+    <h2>Inventory Listing</h2>
+    <h3>${res.resourceId1} ${res.resourceId2}: ${res.title}</h3>
     <g:if test="${comp.div.length() == 0}">
       <h3>${comp.title}</h3>
     </g:if>

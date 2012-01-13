@@ -217,7 +217,7 @@ class ResourcesController {
     }
     
     def invalid = {
-        render "invalid session"
+        render "<div class=\"error\">invalid session</div>"
         
     }
 }

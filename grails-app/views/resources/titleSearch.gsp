@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <h1>Title Search</h1>
+    <h2>Title Search</h2>
     <g:if test="${cols.size > 1}">
     <ul>
       <g:each in="${cols}" var="col">

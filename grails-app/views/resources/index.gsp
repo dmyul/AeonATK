@@ -6,7 +6,9 @@
     <meta name="layout" content="main"/>
   </head>
   <body>
-      <h2>${flash.error}</h2>
+	  <g:if test="${flash.error != null}">
+      <div class="error">${flash.error}</div>
+	  </g:if>
     </div>
   </body>
 </html>
