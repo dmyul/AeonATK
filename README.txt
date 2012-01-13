@@ -1,5 +1,5 @@
 AeonATK version: 1.0
-01/13/2011
+01/13/2012
 
 AeonATK is a web application written in the Grails framework. It was designed to interface a request in an Aeon Client with an Archivists' Toolkit database.
 
@@ -16,9 +16,7 @@ Please refer to individual documentation for each of these
 Database
 ----------------------
 
-You will need a working AT Database for this application. Vist  for more info.
-
-In order to get this running you will need to configure the database file at /grails-app/conf/DataSource.groovy . 
+In order to get this running you will need to configure the database file at /grails-app/conf/DataSource.groovy , with a connection to your AT installation. 
 
 The file is distributed with each environment preset to 'update'.I would suggest not changing this, as you could wipe your database with little trouble. I would also suggest using a read only connection for this, to further protect possible modification of your database. 
 
@@ -67,7 +65,7 @@ You should see the main screen at the url above
 If you do either search you should get a screen that simply says "Invalid Session", this is a good sign. 
 
 
-Bypassing Security
+Bypassing Security for Testing
 -------------------------
 In order to bypass the security mechanism you can provide the secret manually through a get request. If you did not change the passcode in the security section you can establish a validated sessions with the following url:
 	http://localhost:8080/AeonATK/resources/aeon/?secret=password
@@ -85,9 +83,6 @@ If you are able to get everything running you can compile the application for pr
 
 This will create a new production .war file in the /target directory which you can deploy to you application server
 
-Good Luck, 
-
-Don Mennerich
 donald.mennerich@yale.edu
 
 
